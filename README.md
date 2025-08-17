@@ -71,17 +71,7 @@ banking-automation/
   - komunikaty o powodzeniu transakcji,
   - zgodność liczby transakcji w tabeli.
 
-## Przydatne tipy
-- Jeśli strona czasem działa wolniej: zwiększ timeout w `helpers.py` (DEFAULT_TIMEOUT).
-- Jeżeli Chrome wymaga niestandardowej ścieżki, skonfiguruj ją w `conftest.py` (ChromeOptions).
-- Jeśli chcesz zmienić walutę, edytuj parametr w `test_banking_e2e.py` (zmienna `currency`).
 
-### Spowolnienie klikania (demo / rekrutacja)
-Ustaw zmienną środowiskową `SLOWMO_MS`, aby dodać pauzę po każdej akcji (klik, wpisanie znaku, wybór z listy).
-Np. 400 ms:
-```bash
-SLOWMO_MS=400 pytest -q tests/test_banking_e2e.py -s
-```
 
 ### Domyślne ustawienia (pod rekrutację)
 - **Spowolnienie klików**: włączone domyślnie (600 ms po każdej akcji).  
