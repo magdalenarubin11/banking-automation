@@ -62,14 +62,3 @@ banking-automation/
 └─ tests/
    └─ test_banking_e2e.py
 ```
-
-## Notatki implementacyjne
-- Zastosowano Page Object Model, jawne **WebDriverWait** i selektory oparte o widoczny tekst / atrybuty Angulara.
-- Po dodaniu klienta i otwarciu konta test loguje się jako nowy klient, wykonuje **wpłaty i wypłaty**, a następnie przechodzi na stronę **Transactions**.
-- Test domyślnie weryfikuje:
-  - sukces alertów po dodaniu klienta i utworzeniu konta,
-  - komunikaty o powodzeniu transakcji,
-  - zgodność liczby transakcji w tabeli.
-
-- **Przeglądarka po teście**: domyślnie **zostaje otwarta**.  
-  Możesz wyłączyć: `KEEP_BROWSER_OPEN=false`.
