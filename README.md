@@ -71,10 +71,5 @@ banking-automation/
   - komunikaty o powodzeniu transakcji,
   - zgodność liczby transakcji w tabeli.
 
-
-
-### Domyślne ustawienia (pod rekrutację)
-- **Spowolnienie klików**: włączone domyślnie (600 ms po każdej akcji).  
-  Możesz nadpisać: `SLOWMO_MS=0` (wyłącz) lub `SLOWMO_MS=800` (wolniej).
 - **Przeglądarka po teście**: domyślnie **zostaje otwarta**.  
   Możesz wyłączyć: `KEEP_BROWSER_OPEN=false`.
